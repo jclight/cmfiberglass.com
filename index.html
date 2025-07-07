@@ -1,324 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cooper Marine Fiberglass - Mobile Repair & Restoration</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc; /* Lighter, almost white background */
-            color: #334155; /* Darker text for better contrast */
-        }
-        .section-header {
-            color: #0f172a; /* Very dark blue/black for headings */
-            font-weight: 800; /* Extra bold for impact */
-        }
-        .btn-primary {
-            background-color: #007bff; /* Vibrant Blue */
-            color: white;
-            padding: 0.85rem 2rem;
-            border-radius: 9999px; /* Fully rounded */
-            transition: all 0.3s ease;
-            box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3); /* Blue shadow */
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        .btn-primary:hover {
-            background-color: #0056b3; /* Darker blue on hover */
-            transform: translateY(-2px); /* Slight lift effect */
-            box-shadow: 0 8px 16px rgba(0, 123, 255, 0.4);
-        }
-        .card {
-            background-color: white;
-            border-radius: 1.5rem; /* More rounded corners */
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08); /* Softer, larger shadow */
-            padding: 2rem;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid #e2e8f0; /* Subtle border */
-        }
-        .card:hover {
-            transform: translateY(-7px); /* More pronounced lift */
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
-        }
-        .icon {
-            color: #007bff; /* Vibrant Blue for icons */
-            font-size: 4rem; /* Larger icons */
-            margin-bottom: 1rem;
-        }
-        .footer {
-            background-color: #0f172a; /* Deep charcoal/navy for footer */
-            color: white;
-            border-radius: 1.5rem 1.5rem 0 0; /* Rounded top corners */
-        }
-        .footer a {
-            color: #93c5fd; /* Light blue for footer links */
-            transition: color 0.3s ease;
-        }
-        .footer a:hover {
-            color: #ffffff;
-            text-decoration: underline;
-        }
-        /* New Layout Specific Styles */
-        .hero-section-split {
-            background: linear-gradient(to right, #003366 50%, #1a4a7a 50%); /* Split background */
-            min-height: 70vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 3rem; /* More pronounced rounding */
-            margin: 1.5rem;
-            overflow: hidden;
-        }
-        .hero-content-left {
-            padding: 4rem;
-            color: white;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-        }
-        .hero-image-right {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem;
-        }
-        .hero-image-right img {
-            border-radius: 1.5rem;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            max-width: 100%;
-            height: auto;
-        }
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Welcome to Cooper Marine Fiberglass | Cooper Marine Fiberglass</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Expert Mobile Fiberglass Repair - Bringing Quality Restoration Directly to Your Vessel">
+    <meta name="generator" content="Hugo 0.147.9">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    
 
-        .about-section-split {
-            display: flex;
-            flex-direction: row; /* Default for desktop */
-            align-items: center;
-            gap: 4rem;
-            padding: 4rem;
-            background-color: #e0f2fe; /* Light blue background */
-            border-radius: 2rem;
-            margin: 1.5rem;
-        }
-        .about-content-left, .about-image-right {
-            flex: 1;
-        }
-        .about-image-right img {
-            border-radius: 1.5rem;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
+    
+<link rel="stylesheet" href="/ananke/css/main.min.8d048772ae72ab11245a0e296d1f2a36d3e3dd376c6c867394d6cc659c68fc37.css" >
 
-        .contact-section-split {
-            display: flex;
-            flex-direction: row;
-            gap: 4rem;
-            padding: 4rem;
-            background-color: #0f172a; /* Dark background */
-            color: white;
-            border-radius: 2rem;
-            margin: 1.5rem;
-        }
-        .contact-form-left, .contact-details-right {
-            flex: 1;
-        }
-        .contact-form-left input,
-        .contact-form-left textarea {
-            width: 100%;
-            padding: 0.75rem;
-            border-radius: 0.75rem;
-            border: 1px solid #475569; /* Darker border for contrast */
-            background-color: #1e293b; /* Slightly lighter dark background for fields */
-            color: white;
-            margin-bottom: 1rem;
-        }
-        .contact-form-left input::placeholder,
-        .contact-form-left textarea::placeholder {
-            color: #94a3b8; /* Lighter placeholder text */
-        }
 
-        /* Responsive adjustments */
-        @media (max-width: 1024px) { /* Adjust for medium screens */
-            .hero-section-split, .about-section-split, .contact-section-split {
-                flex-direction: column; /* Stack columns on smaller screens */
-                text-align: center;
-            }
-            .hero-content-left, .hero-image-right,
-            .about-content-left, .about-image-right,
-            .contact-form-left, .contact-details-right {
-                padding: 2rem;
-            }
-            .hero-content-left {
-                align-items: center; /* Center text on small screens */
-            }
-            .about-image-right img, .hero-image-right img {
-                max-width: 80%; /* Smaller images on mobile */
-            }
-        }
-        @media (max-width: 768px) {
-            .text-5xl { font-size: 2.5rem; }
-            .text-xl { font-size: 1.125rem; }
-            .btn-primary { padding: 0.75rem 1.5rem; font-size: 0.9rem; }
-            .card { padding: 1.5rem; border-radius: 1rem; }
-            .icon { font-size: 3rem; }
-            .hero-section-split, .about-section-split, .contact-section-split {
-                margin: 1rem;
-                padding: 2rem 1rem;
-                border-radius: 1.5rem;
-            }
-        }
-    </style>
-</head>
-<body class="antialiased">
 
-    <!-- Navigation Bar -->
-    <nav class="bg-white p-4 shadow-lg rounded-b-2xl mx-auto max-w-7xl mt-0">
-        <div class="container mx-auto flex justify-between items-center px-4">
-            <a href="#" class="text-3xl font-extrabold text-blue-800 tracking-tight">Cooper Marine Fiberglass</a>
-            <div class="space-x-6 hidden md:flex">
-                <a href="#services" class="text-gray-700 hover:text-blue-600 font-semibold transition duration-300">Services</a>
-                <a href="#about" class="text-gray-700 hover:text-blue-600 font-semibold transition duration-300">About Us</a>
-                <a href="#contact" class="btn-primary">Contact Us</a>
-            </div>
-            <!-- Mobile Menu Button (Hamburger) - Not functional in static HTML, but for visual representation -->
-            <button class="md:hidden text-gray-700 focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-            </button>
-        </div>
-    </nav>
+  
+    <link rel="stylesheet" href="/css/custom.css">
+  
 
-    <!-- Hero Section - Split Layout -->
-    <header class="hero-section-split">
-        <div class="hero-content-left">
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight drop-shadow-lg">Expert Mobile Fiberglass Repair</h1>
-            <p class="text-xl md:text-3xl mb-10 font-light opacity-90">Bringing Quality Restoration Directly to Your Vessel</p>
-            <a href="#contact" class="btn-primary text-xl">
-                Get a Free Quote Today
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
+
+    
+
+
+    
+      
+
+    
+
+    
+    
+      <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Cooper Marine Fiberglass" />
+      <link href="/index.xml" rel="feed" type="application/rss+xml" title="Cooper Marine Fiberglass" />
+      
+    
+
+    
+      <link rel="canonical" href="https://cmfiberglass.com/">
+    
+
+    <meta property="og:url" content="https://cmfiberglass.com/">
+  <meta property="og:site_name" content="Cooper Marine Fiberglass">
+  <meta property="og:title" content="Welcome to Cooper Marine Fiberglass">
+  <meta property="og:description" content="Expert Mobile Fiberglass Repair - Bringing Quality Restoration Directly to Your Vessel">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Welcome to Cooper Marine Fiberglass">
+  <meta itemprop="description" content="Expert Mobile Fiberglass Repair - Bringing Quality Restoration Directly to Your Vessel">
+  <meta itemprop="datePublished" content="2025-07-07T10:00:00-04:00">
+  <meta itemprop="dateModified" content="2025-07-07T10:00:00-04:00">
+  <meta itemprop="wordCount" content="98">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Welcome to Cooper Marine Fiberglass">
+  <meta name="twitter:description" content="Expert Mobile Fiberglass Repair - Bringing Quality Restoration Directly to Your Vessel">
+
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production">
+
+    
+
+  <header>
+    <div class="pb3-m pb6-l bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Cooper Marine Fiberglass
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          Welcome to Cooper Marine Fiberglass
+        </h1>
+        
+          <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+            Expert Mobile Fiberglass Repair - Bringing Quality Restoration Directly to Your Vessel
+          </h2>
+        
+      </div>
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray">
+    <p>At Cooper Marine Fiberglass, we bring over 20 years of dedicated experience in marine fiberglass repair and restoration directly to your vessel. Based in Detroit, Michigan, our mobile service ensures convenience without compromising on quality.</p>
+<p>We are committed to unmatched professionalism, meticulous attention to detail, and using only the highest quality materials. Our goal is to restore your vessel&rsquo;s integrity and aesthetic appeal, ensuring it stands the test of time and the rigors of the marine environment.</p>
+<p>Whether it&rsquo;s a minor gelcoat scratch or a major structural rebuild, trust Cooper Marine Fiberglass for reliable, efficient, and expert service.</p>
+
+  </article>
+
+  
+  
+  
+  
+  
+
+  
+    <div class="pa3 pa4-ns w-100 w-70-ns center">
+      
+
+      <section class="w-100 mw8">
+        
+        
+          <div class="w-100 mb4 relative">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l dark-gray no-underline">
+    <div class="flex-column flex-row-ns flex">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/posts/my-first-post/" class="color-inherit dim link">
+            My First Post
             </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          
         </div>
-        <div class="hero-image-right">
-            <img src="https://placehold.co/600x400/a0c4ff/003366?text=Boat+Repair" alt="Boat Fiberglass Repair" class="w-full h-auto object-cover">
-        </div>
-    </header>
+        <a href="/posts/my-first-post/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+      </div>
+    </div>
+  </div>
+</article>
 
-    <!-- Services Section - Enhanced Grid -->
-    <section id="services" class="py-20 bg-gradient-to-br from-blue-50 to-white rounded-3xl mx-4 my-8">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl md:text-5xl section-header mb-16">Our Specialized Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <!-- Service Card 1 -->
-                <div class="card">
-                    <div class="icon">🛥️</div>
-                    <h3 class="text-2xl font-bold text-blue-800 mb-3">Hull & Deck Repair</h3>
-                    <p class="text-gray-600 leading-relaxed">Seamless repairs for cracks, holes, and structural damage on hulls and decks, restoring integrity and appearance.</p>
-                </div>
-                <!-- Service Card 2 -->
-                <div class="card">
-                    <div class="icon">🎨</div>
-                    <h3 class="text-2xl font-bold text-blue-800 mb-3">Gelcoat Restoration</h3>
-                    <p class="text-gray-600 leading-relaxed">Expert color matching and finishing to eliminate scratches, fading, and oxidation, bringing back original luster.</p>
-                </div>
-                <!-- Service Card 3 -->
-                <div class="card">
-                    <div class="icon">🔨</div>
-                    <h3 class="text-2xl font-bold text-blue-800 mb-3">Transom & Stringer Rebuilds</h3>
-                    <p class="text-gray-600 leading-relaxed">Comprehensive structural rebuilds for weakened transoms and stringers, ensuring long-term durability and safety.</p>
-                </div>
-                <!-- Service Card 4 -->
-                <div class="card">
-                    <div class="icon">💧</div>
-                    <h3 class="text-2xl font-bold text-blue-800 mb-3">Osmotic Blister Repair</h3>
-                    <p class="text-gray-600 leading-relaxed">Effective treatment and prevention of osmotic blistering, protecting your boat's longevity and value.</p>
-                </div>
-                <!-- Service Card 5 -->
-                <div class="card">
-                    <div class="icon">✨</div>
-                    <h3 class="text-2xl font-bold text-blue-800 mb-3">Custom Fiberglass Fabrication</h3>
-                    <p class="text-gray-600 leading-relaxed">From custom consoles to structural modifications, we craft high-quality fiberglass components to your specifications.</p>
-                </div>
-                <!-- Service Card 6 -->
-                <div class="card">
-                    <div class="icon">🛠️</div>
-                    <h3 class="text-2xl font-bold text-blue-800 mb-3">Insurance Claim Repairs</h3>
-                    <p class="text-gray-600 leading-relaxed">Experienced in handling insurance claims, providing detailed estimates and high-quality repairs for peace of mind.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+          </div>
+        
+      </section>
 
-    <!-- About Us Section - Split Layout with Image -->
-    <section id="about" class="about-section-split">
-        <div class="about-image-right">
-            <img src="https://placehold.co/600x400/0056b3/e0f2fe?text=Experienced+Technician" alt="Experienced Fiberglass Technician" class="w-full h-auto object-cover">
-        </div>
-        <div class="about-content-left text-gray-700 text-lg leading-relaxed">
-            <h2 class="text-4xl md:text-5xl section-header mb-8 text-left">About Cooper Marine Fiberglass</h2>
-            <p class="mb-4">At Cooper Marine Fiberglass, we bring over 20 years of dedicated experience in marine fiberglass repair and restoration directly to your location. Based in Detroit, Michigan, our mobile service ensures convenience without compromising on quality.</p>
-            <p class="mb-4">We are committed to unmatched professionalism, meticulous attention to detail, and using only the highest quality materials. Our goal is to restore your vessel's integrity and aesthetic appeal, ensuring it stands the test of time and the rigors of the marine environment.</p>
-            <p>Whether it's a minor gelcoat scratch or a major structural rebuild, trust Cooper Marine Fiberglass for reliable, efficient, and expert service.</p>
-        </div>
-    </section>
+      
 
-    <!-- Contact Section - Split Layout with Form Placeholder -->
-    <section id="contact" class="contact-section-split">
-        <div class="contact-form-left">
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-8 drop-shadow-md">Get a Free Quote</h2>
-            <p class="text-xl mb-6 font-light opacity-90">Tell us about your repair needs, and we'll get back to you promptly.</p>
-            <!-- Placeholder for a simple contact form -->
-            <form action="#" method="POST" class="space-y-4">
-                <div>
-                    <label for="name" class="sr-only">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" class="rounded-lg p-3 bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:ring-blue-500 focus:border-blue-500">
-                </div>
-                <div>
-                    <label for="email" class="sr-only">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" class="rounded-lg p-3 bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:ring-blue-500 focus:border-blue-500">
-                </div>
-                <div>
-                    <label for="phone" class="sr-only">Phone (Optional)</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Your Phone (Optional)" class="rounded-lg p-3 bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:ring-blue-500 focus:border-blue-500">
-                </div>
-                <div>
-                    <label for="message" class="sr-only">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Describe your repair needs (boat type, damage, location)" class="rounded-lg p-3 bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:ring-blue-500 focus:border-blue-500"></textarea>
-                </div>
-                <button type="submit" class="btn-primary w-full text-xl justify-center">
-                    Submit Request
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                </button>
-            </form>
-        </div>
-        <div class="contact-details-right text-lg leading-relaxed">
-            <h3 class="text-3xl font-bold mb-6">Contact Details</h3>
-            <p class="mb-4">We're ready to assist you with all your marine fiberglass needs. Reach out to us directly:</p>
-            <p class="mb-2">📞 **Phone:** <a href="tel:+15128767565" class="text-blue-300 hover:underline">(512) 876-7565</a></p>
-            <p class="mb-2">✉️ **Email:** <a href="mailto:info@cmfiberglass.com" class="text-blue-300 hover:underline">info@cmfiberglass.com</a></p>
-            <p class="mb-2">📍 **Service Area:** Greater Detroit, Michigan area</p>
-            <p class="mt-6 text-sm opacity-80">Our mobile service brings expert repairs directly to your marina, dock, or boatyard, saving you time and effort.</p>
-        </div>
-    </section>
+    </div>
+  
 
-    <!-- Footer -->
-    <footer class="footer py-10 rounded-t-3xl mx-4">
-        <div class="container mx-auto px-4 text-center text-sm md:text-base">
-            <p>&copy; 2025 Cooper Marine Fiberglass. All rights reserved.</p>
-            <p class="mt-3">
-                <a href="#privacy" class="hover:underline mx-2">Privacy Policy</a> |
-                <a href="#terms" class="hover:underline mx-2">Terms of Service</a>
-            </p>
-        </div>
-    </footer>
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://cmfiberglass.com/" >
+    &copy;  Cooper Marine Fiberglass 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
 
-</body>
+  </body>
 </html>
