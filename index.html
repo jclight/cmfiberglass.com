@@ -1,167 +1,1484 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>Welcome to Cooper Marine Fiberglass | Cooper Marine Fiberglass</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Expert Mobile Fiberglass Repair - Bringing Quality Restoration Directly to Your Vessel">
-    <meta name="generator" content="Hugo 0.147.9">
-    
-    
-    
-      <meta name="robots" content="index, follow">
-    
-    
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cooper Marine Fiberglass | Gel Coat &amp; Fiberglass Restoration — Southeastern Michigan</title>
+  <meta name="description" content="Expert gel coat and fiberglass restoration serving Southeastern Michigan. Drop-off facility near Western Golf & Country Club, Redford Township. Wayne, Oakland, Macomb, Livingston, Washtenaw, and St. Clair Counties." />
 
-    
-<link rel="stylesheet" href="/ananke/css/main.min.8d048772ae72ab11245a0e296d1f2a36d3e3dd376c6c867394d6cc659c68fc37.css" >
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
+  <style>
+    :root {
+      --deep:        #0b1929;
+      --navy:        #112a44;
+      --steel:       #1e4d72;
+      --brass:       #b5893a;
+      --brass-light: #d4aa5e;
+      --cream:       #f2ede4;
+      --white:       #ffffff;
+      --ink:         #0f1c29;
+      --ink-soft:    #3f5265;
+      --ink-muted:   #6b7f90;
+      --border:      #dde4eb;
+      --border-dark: rgba(255,255,255,0.07);
+      --radius:      10px;
+      --maxw:        1160px;
+      --shadow-card: 0 4px 24px rgba(11,25,41,0.07);
+      --shadow-lift: 0 16px 48px rgba(11,25,41,0.14);
+    }
 
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--ink);
+      background: var(--white);
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
 
-  
-    <link rel="stylesheet" href="/css/custom.css">
-  
+    .container {
+      width: 100%;
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
+    .eyebrow {
+      display: inline-block;
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--brass);
+      margin-bottom: 16px;
+    }
 
-    
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      border: none;
+      border-radius: 50px;
+      padding: 14px 28px;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-brass { background: var(--brass); color: #fff; }
+    .btn-brass:hover { background: var(--brass-light); box-shadow: 0 8px 28px rgba(181,137,58,0.32); }
+    .btn-ghost-light {
+      background: transparent;
+      color: rgba(255,255,255,0.65);
+      border: 1px solid rgba(255,255,255,0.20);
+    }
+    .btn-ghost-light:hover { color: #fff; border-color: rgba(255,255,255,0.50); background: rgba(255,255,255,0.05); }
+    .btn-ghost-dark {
+      background: transparent;
+      color: var(--ink-soft);
+      border: 1px solid var(--border);
+    }
+    .btn-ghost-dark:hover { color: var(--ink); border-color: rgba(15,28,41,0.40); }
 
+    /* ── NAV ── */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(11,25,41,0.97);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-dark);
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      max-width: var(--maxw);
+      margin: 0 auto;
+      height: 64px;
+      gap: 24px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: baseline;
+      gap: 0;
+      flex-shrink: 0;
+      text-decoration: none;
+    }
+    .nav-logo .script {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-weight: 700;
+      font-size: 22px;
+      color: var(--brass-light);
+      letter-spacing: -0.01em;
+      line-height: 1;
+    }
+    .nav-logo .sans {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 10.5px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.72);
+      margin-left: 10px;
+      line-height: 1;
+      align-self: center;
+    }
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      margin: 0 auto;
+    }
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: rgba(255,255,255,0.48);
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: rgba(255,255,255,0.88); }
+    .nav-cta {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--brass-light);
+      flex-shrink: 0;
+      transition: color 0.15s;
+      text-decoration: none;
+    }
+    .nav-cta:hover { color: #fff; }
 
-    
-      
+    /* ── HERO ── */
+    .hero {
+      background: var(--deep);
+      position: relative;
+      overflow: hidden;
+      min-height: 94vh;
+      display: flex;
+      align-items: center;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 65% 50% at 90% 35%, rgba(30,77,114,0.22) 0%, transparent 70%),
+        radial-gradient(ellipse 45% 65% at 12% 80%, rgba(181,137,58,0.06) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 39px,
+        rgba(255,255,255,0.016) 39px,
+        rgba(255,255,255,0.016) 40px
+      );
+      pointer-events: none;
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      padding: 88px 0 108px;
+    }
+    .hero-content { max-width: 800px; }
 
-    
+    .hero-geo {
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--brass);
+      margin-bottom: 36px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .hero-geo::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1px;
+      background: var(--brass);
+      flex-shrink: 0;
+    }
 
-    
-    
-      <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Cooper Marine Fiberglass" />
-      <link href="/index.xml" rel="feed" type="application/rss+xml" title="Cooper Marine Fiberglass" />
-      
-    
+    .hero-h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(44px, 6.5vw, 82px);
+      font-weight: 700;
+      line-height: 1.05;
+      color: #fff;
+      letter-spacing: -0.015em;
+      margin-bottom: 0;
+    }
+    .hero-h1 em {
+      font-style: italic;
+      color: var(--brass-light);
+      display: block;
+    }
 
-    
-      <link rel="canonical" href="https://cmfiberglass.com/">
-    
+    .hero-divider {
+      width: 48px;
+      height: 1px;
+      background: rgba(181,137,58,0.45);
+      margin: 44px 0;
+    }
 
-    <meta property="og:url" content="https://cmfiberglass.com/">
-  <meta property="og:site_name" content="Cooper Marine Fiberglass">
-  <meta property="og:title" content="Welcome to Cooper Marine Fiberglass">
-  <meta property="og:description" content="Expert Mobile Fiberglass Repair - Bringing Quality Restoration Directly to Your Vessel">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
+    .hero-body {
+      font-size: clamp(16px, 1.8vw, 19px);
+      color: rgba(255,255,255,0.48);
+      line-height: 1.70;
+      max-width: 560px;
+      margin-bottom: 16px;
+    }
+    .hero-body strong { color: rgba(255,255,255,0.78); font-weight: 500; }
 
-  <meta itemprop="name" content="Welcome to Cooper Marine Fiberglass">
-  <meta itemprop="description" content="Expert Mobile Fiberglass Repair - Bringing Quality Restoration Directly to Your Vessel">
-  <meta itemprop="datePublished" content="2025-07-07T10:00:00-04:00">
-  <meta itemprop="dateModified" content="2025-07-07T10:00:00-04:00">
-  <meta itemprop="wordCount" content="98">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Welcome to Cooper Marine Fiberglass">
-  <meta name="twitter:description" content="Expert Mobile Fiberglass Repair - Bringing Quality Restoration Directly to Your Vessel">
+    .hero-scarcity {
+      font-size: 14px;
+      color: rgba(255,255,255,0.32);
+      font-style: italic;
+      max-width: 520px;
+      line-height: 1.60;
+      margin-bottom: 40px;
+    }
 
-      
-    
-	
-  </head><body class="ma0 avenir bg-near-white production">
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
 
-    
+    .hero-stats {
+      display: flex;
+      gap: 0;
+      margin-top: 72px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.07);
+    }
+    .hero-stat {
+      padding-right: 44px;
+      margin-right: 44px;
+      border-right: 1px solid rgba(255,255,255,0.07);
+    }
+    .hero-stat:last-child { border-right: none; padding-right: 0; margin-right: 0; }
+    .hero-stat .num {
+      display: block;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--brass-light);
+      line-height: 1;
+    }
+    .hero-stat .label {
+      display: block;
+      font-size: 10.5px;
+      font-weight: 500;
+      letter-spacing: 0.10em;
+      color: rgba(255,255,255,0.30);
+      margin-top: 7px;
+      text-transform: uppercase;
+    }
 
-  <header>
-    <div class="pb3-m pb6-l bg-black">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l center items-center justify-between">
-    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
-      
-        Cooper Marine Fiberglass
-      
+    /* ── STANDARD STRIP ── */
+    .standard-strip {
+      background: var(--brass);
+      padding: 22px 0;
+    }
+    .standard-strip-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+    .standard-strip p {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: rgba(255,255,255,0.92);
+      text-align: center;
+    }
+    .standard-strip-rule {
+      width: 1px;
+      height: 16px;
+      background: rgba(255,255,255,0.35);
+      flex-shrink: 0;
+    }
+
+    /* ── COOPER SPECIALISTS ── */
+    .specialists {
+      background: var(--deep);
+      padding: 100px 0;
+      border-top: 1px solid var(--border-dark);
+    }
+    .specialists-inner {
+      display: grid;
+      grid-template-columns: 5fr 7fr;
+      gap: 88px;
+      align-items: start;
+    }
+
+    /* Left: origin story */
+    .spec-story {}
+    .spec-story h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(28px, 3.2vw, 38px);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.18;
+      margin-bottom: 24px;
+    }
+    .spec-story h2 em { font-style: italic; color: var(--brass-light); }
+    .spec-story p {
+      font-size: 15.5px;
+      color: rgba(255,255,255,0.48);
+      line-height: 1.78;
+      margin-bottom: 16px;
+    }
+    .spec-story p strong { color: rgba(255,255,255,0.72); font-weight: 500; }
+    .spec-story p:last-of-type { margin-bottom: 0; }
+
+    /* Industry relationships callout */
+    .industry-note {
+      margin-top: 36px;
+      padding: 22px 24px;
+      border: 1px solid rgba(255,255,255,0.07);
+      border-left: 3px solid var(--brass);
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .industry-note p {
+      font-size: 14px;
+      color: rgba(255,255,255,0.42);
+      line-height: 1.65;
+      margin: 0;
+    }
+    .industry-note p strong { color: rgba(255,255,255,0.68); font-weight: 500; }
+
+    /* Right: the two specialists */
+    .spec-right {}
+    .spec-label {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--brass);
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .spec-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(255,255,255,0.07);
+    }
+
+    .spec-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .spec-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: var(--radius);
+      padding: 32px 30px;
+      transition: background 0.20s, border-color 0.20s;
+    }
+    .spec-card:hover {
+      background: rgba(255,255,255,0.055);
+      border-color: rgba(181,137,58,0.22);
+    }
+    .spec-card-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 6px;
+      flex-wrap: wrap;
+    }
+    .spec-name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1;
+    }
+    .spec-brand {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--brass);
+      white-space: nowrap;
+    }
+    .spec-role {
+      font-size: 12px;
+      color: rgba(255,255,255,0.30);
+      letter-spacing: 0.06em;
+      margin-bottom: 18px;
+    }
+    .spec-card p {
+      font-size: 14.5px;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.68;
+      margin-bottom: 18px;
+    }
+    .spec-card p:last-of-type { margin-bottom: 0; }
+    .spec-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .spec-tag {
+      font-size: 11.5px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.38);
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 50px;
+      padding: 4px 12px;
+      white-space: nowrap;
+    }
+    .spec-two-brands {
+      margin-top: 32px;
+      text-align: center;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-size: 15px;
+      color: rgba(255,255,255,0.22);
+      letter-spacing: 0.04em;
+    }
+    .spec-two-brands strong {
+      font-style: normal;
+      font-weight: 700;
+      color: rgba(255,255,255,0.35);
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    /* ── SERVICES ── */
+    .services {
+      background: var(--white);
+      padding: 100px 0;
+    }
+    .services-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: end;
+      margin-bottom: 64px;
+    }
+    .services-header h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(28px, 3.2vw, 40px);
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--ink);
+    }
+    .services-header h2 em { font-style: italic; color: var(--brass); }
+    .services-header p {
+      font-size: 16px;
+      color: var(--ink-soft);
+      line-height: 1.72;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .service-card {
+      background: var(--white);
+      padding: 36px 32px 32px;
+      display: flex;
+      flex-direction: column;
+      transition: background 0.18s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .service-card:hover { background: var(--cream); }
+    .service-num {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      color: var(--brass);
+      margin-bottom: 20px;
+    }
+    .service-card h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.25;
+      margin-bottom: 12px;
+      flex-grow: 1;
+    }
+    .service-card p {
+      font-size: 14px;
+      color: var(--ink-soft);
+      line-height: 1.65;
+      margin-bottom: 24px;
+    }
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      color: var(--brass);
+      transition: gap 0.18s;
+    }
+    .service-card:hover .service-link { gap: 12px; }
+
+    /* ── PRICING ── */
+    .pricing {
+      background: var(--cream);
+      padding: 100px 0;
+    }
+    .pricing-header { margin-bottom: 56px; }
+    .pricing-header h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(28px, 3.2vw, 40px);
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+    .pricing-header p {
+      font-size: 16px;
+      color: var(--ink-soft);
+      max-width: 580px;
+      line-height: 1.72;
+    }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      align-items: start;
+    }
+    .price-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 44px 40px;
+      position: relative;
+      transition: box-shadow 0.22s;
+    }
+    .price-card:hover { box-shadow: var(--shadow-lift); }
+    .price-card.primary {
+      border-color: var(--brass);
+      box-shadow: 0 0 0 1px var(--brass), var(--shadow-card);
+    }
+    .price-badge {
+      position: absolute;
+      top: -1px;
+      right: 28px;
+      background: var(--brass);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      padding: 5px 14px 6px;
+      border-radius: 0 0 8px 8px;
+    }
+    .price-type {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--brass);
+      margin-bottom: 10px;
+    }
+    .price-card h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    .price-location {
+      font-size: 13px;
+      color: var(--ink-muted);
+      margin-bottom: 28px;
+      font-style: italic;
+      line-height: 1.5;
+    }
+    .price-amount {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 28px;
+      padding-bottom: 26px;
+      border-bottom: 1px solid var(--border);
+    }
+    .price-dollar {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 52px;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1;
+    }
+    .price-min { font-size: 13px; color: var(--ink-muted); }
+    .price-features {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      margin-bottom: 26px;
+    }
+    .pf {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14.5px;
+      color: var(--ink-soft);
+      line-height: 1.5;
+    }
+    .pf-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--brass);
+      flex-shrink: 0;
+      margin-top: 9px;
+    }
+    .price-note {
+      font-size: 13px;
+      color: var(--ink-muted);
+      font-style: italic;
+      line-height: 1.62;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── INSPECTION CALLOUT ── */
+    .inspection-bar {
+      background: var(--navy);
+      padding: 52px 0;
+    }
+    .inspection-inner {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 48px;
+      align-items: center;
+    }
+    .inspection-inner h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 21px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+      line-height: 1.25;
+    }
+    .inspection-inner h3 em { font-style: italic; color: var(--brass-light); }
+    .inspection-inner p {
+      font-size: 15px;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.68;
+      max-width: 640px;
+    }
+
+    /* ── SERVICE AREA ── */
+    .service-area {
+      background: var(--white);
+      padding: 88px 0;
+      border-top: 1px solid var(--border);
+    }
+    .service-area-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .service-area h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(24px, 2.8vw, 34px);
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+    .service-area h2 em { font-style: italic; color: var(--brass); }
+    .service-area p {
+      font-size: 15.5px;
+      color: var(--ink-soft);
+      line-height: 1.72;
+      margin-bottom: 14px;
+    }
+    .service-area p:last-of-type { margin-bottom: 0; }
+    .county-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .county-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14.5px;
+      color: var(--ink-soft);
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      background: var(--white);
+      transition: background 0.15s;
+    }
+    .county-item:hover { background: var(--cream); }
+    .county-item:nth-child(even) { border-right: none; }
+    .county-item:nth-last-child(-n+2) { border-bottom: none; }
+    .county-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--brass);
+      flex-shrink: 0;
+    }
+    .county-note {
+      font-size: 12.5px;
+      color: var(--ink-muted);
+      font-style: italic;
+      margin-top: 16px;
+      display: block;
+      line-height: 1.55;
+    }
+
+    /* ── FAQ ── */
+    .faq-strip {
+      background: var(--cream);
+      padding: 88px 0;
+    }
+    .faq-header { margin-bottom: 48px; }
+    .faq-header h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(24px, 2.8vw, 34px);
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+    .faq-header p {
+      font-size: 15.5px;
+      color: var(--ink-soft);
+      margin-top: 12px;
+      max-width: 520px;
+      line-height: 1.65;
+    }
+    .faq-list { display: flex; flex-direction: column; }
+    .faq-item { border-top: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: 1px solid var(--border); }
+    .faq-q {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 17.5px;
+      font-weight: 700;
+      color: var(--ink);
+      padding: 26px 0;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 20px;
+      line-height: 1.3;
+      user-select: none;
+    }
+    .faq-q-text { flex: 1; }
+    .faq-toggle {
+      font-size: 24px;
+      font-weight: 300;
+      color: var(--brass);
+      flex-shrink: 0;
+      line-height: 1;
+      transition: transform 0.22s ease;
+      font-family: 'Inter', sans-serif;
+      margin-top: -2px;
+    }
+    .faq-item.open .faq-toggle { transform: rotate(45deg); }
+    .faq-a {
+      font-size: 15.5px;
+      color: var(--ink-soft);
+      line-height: 1.72;
+      max-width: 740px;
+      display: none;
+      padding-bottom: 28px;
+    }
+    .faq-item.open .faq-a { display: block; }
+
+    /* ── FINAL CTA ── */
+    .final-cta {
+      background: var(--deep);
+      padding: 108px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .final-cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 55% 65% at 50% 115%, rgba(181,137,58,0.08) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .final-cta-inner {
+      position: relative;
+      max-width: 620px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .final-cta h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(32px, 4.2vw, 50px);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.10;
+      margin-bottom: 20px;
+    }
+    .final-cta h2 em { font-style: italic; color: var(--brass-light); }
+    .final-cta p {
+      font-size: 17px;
+      color: rgba(255,255,255,0.46);
+      line-height: 1.68;
+      margin-bottom: 40px;
+    }
+    .final-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .final-note {
+      margin-top: 30px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.20);
+      letter-spacing: 0.03em;
+      line-height: 1.8;
+    }
+
+    /* ── FOOTER ── */
+    .site-footer {
+      background: var(--navy);
+      border-top: 1px solid var(--border-dark);
+      padding: 44px 24px 36px;
+    }
+    .footer-inner {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .footer-brand .script {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--brass-light);
+      display: block;
+    }
+    .footer-brand .sans {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.28);
+      display: block;
+      margin-top: 3px;
+    }
+    .footer-brand .tagline {
+      font-size: 11.5px;
+      font-style: italic;
+      color: rgba(255,255,255,0.18);
+      margin-top: 10px;
+      display: block;
+      letter-spacing: 0.04em;
+    }
+    .footer-col h4 {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.28);
+      margin-bottom: 14px;
+    }
+    .footer-col a, .footer-col p {
+      display: block;
+      font-size: 13.5px;
+      color: rgba(255,255,255,0.38);
+      margin-bottom: 8px;
+      transition: color 0.15s;
+      line-height: 1.4;
+      text-decoration: none;
+    }
+    .footer-col a:hover { color: var(--brass-light); }
+    .footer-bottom {
+      max-width: var(--maxw);
+      margin: 32px auto 0;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-bottom p {
+      font-size: 11.5px;
+      color: rgba(255,255,255,0.18);
+    }
+    .footer-scripture {
+      font-size: 11px;
+      color: rgba(255,255,255,0.14);
+      font-style: italic;
+      letter-spacing: 0.10em;
+    }
+
+    /* ── REVEAL ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .reveal { opacity: 0; animation: fadeUp 0.55s ease forwards; animation-play-state: paused; }
+    .reveal.visible { animation-play-state: running; }
+    .reveal-d1 { animation-delay: 0.09s; }
+    .reveal-d2 { animation-delay: 0.18s; }
+    .reveal-d3 { animation-delay: 0.27s; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 980px) {
+      .specialists-inner  { grid-template-columns: 1fr; gap: 56px; }
+      .services-header    { grid-template-columns: 1fr; gap: 20px; }
+      .services-grid      { grid-template-columns: repeat(2, 1fr); }
+      .pricing-grid       { grid-template-columns: 1fr; }
+      .inspection-inner   { grid-template-columns: 1fr; gap: 28px; }
+      .service-area-inner { grid-template-columns: 1fr; gap: 44px; }
+      .hero-stats         { flex-wrap: wrap; gap: 28px; }
+      .hero-stat          { border-right: none; padding-right: 0; margin-right: 0; }
+      .footer-inner       { gap: 36px; }
+    }
+    @media (max-width: 640px) {
+      .nav-links          { display: none; }
+      .services-grid      { grid-template-columns: 1fr; }
+      .spec-card-header   { flex-direction: column; gap: 6px; }
+      .county-list        { grid-template-columns: 1fr; }
+      .county-item        { border-right: none !important; }
+      .county-item:nth-last-child(-n+2) { border-bottom: 1px solid var(--border); }
+      .county-item:last-child { border-bottom: none; }
+      .price-card         { padding: 32px 24px; }
+      .standard-strip-inner { flex-direction: column; gap: 8px; }
+      .standard-strip-rule  { display: none; }
+      .footer-bottom      { flex-direction: column; align-items: flex-start; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { animation: none; opacity: 1; }
+      .btn, .service-card, .price-card, .county-item, .spec-card { transition: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══════════════════════════════════════════════════ -->
+<header class="site-header">
+  <nav class="nav">
+    <a href="/" class="nav-logo" aria-label="Cooper Marine Fiberglass — home">
+      <span class="script">Cooper</span>
+      <span class="sans">Marine Fiberglass</span>
     </a>
-    <div class="flex-l items-center">
-      
+    <ul class="nav-links" role="list">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#specialists">About</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="tel:+12489169166" class="nav-cta">(248) 916-9166</a>
+  </nav>
+</header>
 
-      
-      <div class="ananke-socials"></div>
+<!-- ═══ HERO ══════════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
 
-    </div>
-  </div>
-</nav>
+        <div class="hero-geo reveal">Southeastern Michigan</div>
 
-      <div class="tc-l pv3 ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
-          Welcome to Cooper Marine Fiberglass
+        <h1 class="hero-h1 reveal reveal-d1">
+          The Truth Is
+          <em>In the Finish.</em>
         </h1>
-        
-          <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
-            Expert Mobile Fiberglass Repair - Bringing Quality Restoration Directly to Your Vessel
-          </h2>
-        
-      </div>
-    </div>
-  </header>
 
+        <div class="hero-divider reveal reveal-d2" aria-hidden="true"></div>
 
-    <main class="pb7" role="main">
-      
-  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray">
-    <p>At Cooper Marine Fiberglass, we bring over 20 years of dedicated experience in marine fiberglass repair and restoration directly to your vessel. Based in Detroit, Michigan, our mobile service ensures convenience without compromising on quality.</p>
-<p>We are committed to unmatched professionalism, meticulous attention to detail, and using only the highest quality materials. Our goal is to restore your vessel&rsquo;s integrity and aesthetic appeal, ensuring it stands the test of time and the rigors of the marine environment.</p>
-<p>Whether it&rsquo;s a minor gelcoat scratch or a major structural rebuild, trust Cooper Marine Fiberglass for reliable, efficient, and expert service.</p>
+        <p class="hero-body reveal reveal-d2">
+          <strong>Boats get used. Things happen.</strong> We're the people you call — for gel coat restoration, fiberglass repair, and every mark that life on the water leaves behind.
+        </p>
 
-  </article>
+        <p class="hero-scarcity reveal reveal-d2">
+          If you've been looking for a fiberglass specialist in Southeastern Michigan, you already know how short the list is. We're here to make it a little longer — without lowering the standard.
+        </p>
 
-  
-  
-  
-  
-  
-
-  
-    <div class="pa3 pa4-ns w-100 w-70-ns center">
-      
-
-      <section class="w-100 mw8">
-        
-        
-          <div class="w-100 mb4 relative">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l dark-gray no-underline">
-    <div class="flex-column flex-row-ns flex">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/my-first-post/" class="color-inherit dim link">
-            My First Post
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          
+        <div class="hero-actions reveal reveal-d3">
+          <a class="btn btn-brass" href="#pricing">Drop-Off &amp; Mobile Pricing</a>
+          <a class="btn btn-ghost-light" href="tel:+12489169166">Call (248) 916-9166</a>
         </div>
-        <a href="/posts/my-first-post/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+
+        <div class="hero-stats reveal">
+          <div class="hero-stat">
+            <span class="num">35+</span>
+            <span class="label">Years · The Yacht Doctor</span>
+          </div>
+          <div class="hero-stat">
+            <span class="num">2</span>
+            <span class="label">Hurricanes · 1 Family Trade</span>
+          </div>
+          <div class="hero-stat">
+            <span class="num">6</span>
+            <span class="label">Counties Served</span>
+          </div>
+          <div class="hero-stat">
+            <span class="num">0</span>
+            <span class="label">Shortcuts. Ever.</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
-</article>
+</section>
 
+<!-- ═══ STANDARD STRIP ════════════════════════════════════════ -->
+<div class="standard-strip" aria-label="Brand promise">
+  <div class="container">
+    <div class="standard-strip-inner">
+      <p>Excellence, by Design.</p>
+      <div class="standard-strip-rule" aria-hidden="true"></div>
+      <p>I consider it an honor to leave something better than I found it. &nbsp;— John Cooper</p>
+      <div class="standard-strip-rule" aria-hidden="true"></div>
+      <p>Col 3:23 · Ecc 9:10</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ COOPER SPECIALISTS ════════════════════════════════════ -->
+<section class="specialists" id="specialists">
+  <div class="container">
+    <div class="specialists-inner">
+
+      <!-- Left: origin story -->
+      <div class="spec-story reveal">
+        <span class="eyebrow" style="color: var(--brass-light);">The Origin</span>
+        <h2>A trade earned in<br><em>the field.</em></h2>
+        <p>
+          The Cooper family's introduction to marine fiberglass wasn't a classroom. It was <strong>Hurricane Hugo</strong> — trained by a team of working shipwrights in the immediate aftermath, when there were hundreds of damaged vessels and no time for anything but doing the work correctly.
+        </p>
+        <p>
+          From there: San Diego boat yards and marinas. The kind of work that builds judgment quickly. The Cooper trade has since touched <strong>Hurricane Andrew's aftermath</strong>, boat plants and manufacturers from coast to coast — San Diego, Florida, Michigan, Virginia, Washington, Utah — and decades of working relationships with the people who build these hulls at the source.
+        </p>
+        <p>
+          Cooper Marine Fiberglass is new to Southeastern Michigan. The Cooper trade is not.
+        </p>
+
+        <div class="industry-note">
+          <p>
+            <strong>We know who builds these boats and who to call when something unusual comes up.</strong> Full working relationships with leading local marine businesses and manufacturers mean that if a repair raises a question, we know exactly where to go for the answer. That network took decades to build. It's behind every job we take.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right: the two specialists -->
+      <div class="spec-right reveal reveal-d1">
+        <div class="spec-label">The Cooper Specialists</div>
+
+        <div class="spec-cards">
+
+          <div class="spec-card">
+            <div class="spec-card-header">
+              <span class="spec-name">John Cooper</span>
+              <span class="spec-brand">Cooper Marine Fiberglass</span>
+            </div>
+            <div class="spec-role">Owner · Gel Coat &amp; Fiberglass Restoration · Southeastern Michigan</div>
+            <p>Your direct contact from first call to final polish. John manages every client relationship personally — you'll know what's happening with your boat, when it's happening, and why. Trained in the field, worked the San Diego boat yards, and back in the trade he started in.</p>
+            <p>No hand-offs. No employees. One craftsman on your job.</p>
+            <div class="spec-details">
+              <span class="spec-tag">Gel coat restoration</span>
+              <span class="spec-tag">Color matching</span>
+              <span class="spec-tag">Scratch &amp; cosmetic repair</span>
+              <span class="spec-tag">Dock damage</span>
+              <span class="spec-tag">Hull buff out</span>
+              <span class="spec-tag">Mobile service</span>
+            </div>
           </div>
-        
-      </section>
 
-      
+          <div class="spec-card">
+            <div class="spec-card-header">
+              <span class="spec-name">David Cooper</span>
+              <span class="spec-brand">The Yacht Doctor</span>
+            </div>
+            <div class="spec-role">35+ Years · Structural Specialist · Known Throughout the Regional Industry</div>
+            <p>David Cooper has been in this trade for over 35 years — through Hugo, through Andrew, through plants and marinas from San Diego to Virginia. Known throughout Southeastern Michigan's marine industry simply as the Yacht Doctor.</p>
+            <p>For major structural projects, John works alongside David. Two brands, one standard — and the depth to handle whatever a job requires.</p>
+            <div class="spec-details">
+              <span class="spec-tag">Structural laminate</span>
+              <span class="spec-tag">Transom rebuilding</span>
+              <span class="spec-tag">Major impact damage</span>
+              <span class="spec-tag">Extended on-site projects</span>
+              <span class="spec-tag">Expert evaluation</span>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="spec-two-brands">
+          <strong>Two Brands. One Standard.</strong>
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES ══════════════════════════════════════════════ -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="services-header reveal">
+      <div>
+        <span class="eyebrow">What We Do</span>
+        <h2>Boating life<br>leaves its <em>mark.</em></h2>
+      </div>
+      <p>
+        We work across the full range of gel coat and fiberglass repair. Each service page has photos, process detail, and honest answers to the questions we hear most often.
+      </p>
+    </div>
+    <div class="services-grid">
+
+      <a href="/services/gel-coat-restoration/" class="service-card reveal">
+        <div class="service-num">01</div>
+        <h3>Gel Coat Restoration &amp; Color Matching</h3>
+        <p>UV oxidation and surface damage restored. We work to minimize the visual impact of every repair and match your hull's aged color as closely as the material allows.</p>
+        <span class="service-link">Learn More →</span>
+      </a>
+
+      <a href="/services/scratch-repair/" class="service-card reveal reveal-d1">
+        <div class="service-num">02</div>
+        <h3>Scratch &amp; Cosmetic Repair</h3>
+        <p>Deep scratches, gouges, and spider-web cracks. We assess penetration depth before quoting — what looks cosmetic sometimes isn't.</p>
+        <span class="service-link">Learn More →</span>
+      </a>
+
+      <a href="/services/dock-damage/" class="service-card reveal reveal-d2">
+        <div class="service-num">03</div>
+        <h3>Dock Dings &amp; Impact Damage</h3>
+        <p>Impact voids and rub rail damage. We rebuild the laminate before finishing — the step that determines whether a repair holds through a Michigan winter.</p>
+        <span class="service-link">Learn More →</span>
+      </a>
+
+      <a href="/services/structural-repair/" class="service-card reveal">
+        <div class="service-num">04</div>
+        <h3>Structural Fiberglass Repair</h3>
+        <p>Transom softness, through-hull failures, significant impact damage. Backed by 35+ years of structural expertise — and available on-site for the full project duration when needed.</p>
+        <span class="service-link">Learn More →</span>
+      </a>
+
+      <a href="/services/hull-buff-out/" class="service-card reveal reveal-d1">
+        <div class="service-num">05</div>
+        <h3>Hull Buff Out &amp; Polish</h3>
+        <p>Compound, polish, and protect. When we're already working on your boat, a full buff out brings the surrounding hull up to match the repaired areas.</p>
+        <span class="service-link">Learn More →</span>
+      </a>
+
+      <a href="/services/inspection/" class="service-card reveal reveal-d2">
+        <div class="service-num">06</div>
+        <h3>Drop-Off Hull Inspection</h3>
+        <p>Every drop-off begins with a full walk-around. We document what we find, discuss it with you, and let you decide what gets addressed — clear scope, no pressure.</p>
+        <span class="service-link">Learn More →</span>
+      </a>
 
     </div>
-  
+  </div>
+</section>
 
-    </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://cmfiberglass.com/" >
-    &copy;  Cooper Marine Fiberglass 2025 
-  </a>
-    <div><div class="ananke-socials"></div>
+<!-- ═══ PRICING ═══════════════════════════════════════════════ -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="pricing-header reveal">
+      <span class="eyebrow">Pricing</span>
+      <h2>Two ways to work with us.</h2>
+      <p>Scope and final cost confirmed before any work begins. Most customers find the drop-off experience is smoother — and their budget goes further.</p>
+    </div>
+    <div class="pricing-grid">
+
+      <article class="price-card primary reveal">
+        <div class="price-badge">Recommended</div>
+        <div class="price-type">Drop-Off Service</div>
+        <h3>Leave It With Us</h3>
+        <p class="price-location">Adjacent to Western Golf &amp; Country Club<br>Redford Township, MI · by appointment</p>
+        <div class="price-amount">
+          <span class="price-dollar">$800</span>
+          <span class="price-min">minimum</span>
+        </div>
+        <ul class="price-features" role="list">
+          <li class="pf"><div class="pf-dot" aria-hidden="true"></div>Lower minimum — more of your budget goes toward the actual repair</li>
+          <li class="pf"><div class="pf-dot" aria-hidden="true"></div>Better access for hull-down work and larger repair areas</li>
+          <li class="pf"><div class="pf-dot" aria-hidden="true"></div>Full hull inspection at drop-off — we document everything we find</li>
+          <li class="pf"><div class="pf-dot" aria-hidden="true"></div>Addressing multiple items in one visit is almost always more cost-effective than separate trips</li>
+          <li class="pf"><div class="pf-dot" aria-hidden="true"></div>Same craftsman, start to finish</li>
+        </ul>
+        <p class="price-note">Text photos of your damage to (248) 916-9166 before making the trip — we'll give you an honest read on scope before you trailer.</p>
+      </article>
+
+      <article class="price-card reveal reveal-d1">
+        <div class="price-type">Mobile Service</div>
+        <h3>We Come to You</h3>
+        <p class="price-location">Wayne · Oakland · Macomb · Livingston<br>Washtenaw · St. Clair Counties</p>
+        <div class="price-amount">
+          <span class="price-dollar">$1,200</span>
+          <span class="price-min">minimum</span>
+        </div>
+        <ul class="price-features" role="list">
+          <li class="pf"><div class="pf-dot" aria-hidden="true"></div>Work performed at your marina, driveway, or storage facility</li>
+          <li class="pf"><div class="pf-dot" aria-hidden="true"></div>No trailering required — ideal for larger vessels or fixed-dock boats</li>
+          <li class="pf"><div class="pf-dot" aria-hidden="true"></div>Full equipment rig on-site — no compromises in the field</li>
+          <li class="pf"><div class="pf-dot" aria-hidden="true"></div>For extended structural projects, full on-site setup available for the duration</li>
+        </ul>
+        <p class="price-note">The higher minimum reflects travel, on-site setup, and field working conditions. The same level of craft — wherever your boat is.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ INSPECTION CALLOUT ════════════════════════════════════ -->
+<div class="inspection-bar">
+  <div class="container">
+    <div class="inspection-inner reveal">
+      <div>
+        <h3>Every drop-off starts with a <em>full hull inspection.</em></h3>
+        <p>We walk the entire boat at intake and document what we find. Customers often discover it's more efficient — and less expensive — to address several items in one visit rather than making separate trips. We'll tell you what we see and you decide what gets done.</p>
+      </div>
+      <a class="btn btn-ghost-light" href="tel:+12489169166" style="flex-shrink:0;">Schedule a Drop-Off</a>
+    </div>
+  </div>
 </div>
+
+<!-- ═══ SERVICE AREA ══════════════════════════════════════════ -->
+<section class="service-area">
+  <div class="container">
+    <div class="service-area-inner">
+      <div class="reveal">
+        <span class="eyebrow">Where We Work</span>
+        <h2>Southeastern<br><em>Michigan.</em></h2>
+        <p>
+          Our drop-off facility is in Redford Township — central to the entire metro area. Mobile service reaches throughout Southeastern Michigan. The lakes, rivers, and channels across these six counties represent some of the finest freshwater boating in the country. We know the territory.
+        </p>
+        <p>
+          Not sure if we reach you? Call or text — we'll tell you directly.
+        </p>
+      </div>
+      <div class="reveal reveal-d1">
+        <div class="county-list" role="list">
+          <div class="county-item" role="listitem"><div class="county-dot" aria-hidden="true"></div>Wayne County</div>
+          <div class="county-item" role="listitem"><div class="county-dot" aria-hidden="true"></div>Oakland County</div>
+          <div class="county-item" role="listitem"><div class="county-dot" aria-hidden="true"></div>Macomb County</div>
+          <div class="county-item" role="listitem"><div class="county-dot" aria-hidden="true"></div>Livingston County</div>
+          <div class="county-item" role="listitem"><div class="county-dot" aria-hidden="true"></div>Washtenaw County</div>
+          <div class="county-item" role="listitem"><div class="county-dot" aria-hidden="true"></div>St. Clair County</div>
+        </div>
+        <span class="county-note">Drop-off facility adjacent to Western Golf &amp; Country Club, Redford Township.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FAQ ════════════════════════════════════════════════════ -->
+<section class="faq-strip" id="faq">
+  <div class="container">
+    <div class="faq-header reveal">
+      <span class="eyebrow">Common Questions</span>
+      <h2>Straight answers.</h2>
+      <p>What we hear most — before the estimate, at drop-off, and after the work is done.</p>
+    </div>
+    <div class="faq-list reveal">
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-q-text">Will the repaired area match the rest of my hull exactly?</span>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-a">
+          Rarely — and any shop that promises a perfect factory match on an aged hull is overpromising. Gel coat changes color as it weathers and oxidizes over years of UV exposure. We are very good at minimizing the visual impact of every repair, and color matching is a skill we take seriously. But our contracts are honest: color matching on aged gel coat is always best effort, not a guarantee. We'll tell you what to expect before we start.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-q-text">I tried to fix it myself first. Does that make it harder?</span>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-a">
+          It can. Hardware store gel coat kits are formulated to bond to themselves, not to fiberglass — and removing the wrong product before doing the repair correctly adds time and cost. If you've attempted a DIY fix, tell us upfront. We'll assess whether it complicates the work and factor that into the estimate honestly. No judgment — we've seen everything.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-q-text">What happens at drop-off?</span>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-a">
+          We walk the entire boat together at intake. We're looking at the specific damage you came in for, but we document anything else we notice as well — because addressing multiple items in one visit is almost always more cost-effective than making separate trips. You'll see everything we find, we'll discuss what each repair involves, and you decide what gets done. Nothing proceeds without your sign-off.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-q-text">How do I know if a scratch has gone through the gel coat into the fiberglass?</span>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-a">
+          Run your fingernail across the scratch. If it catches and you feel a groove with real depth, the scratch has likely penetrated the gel coat layer. Exposed fiberglass beneath looks fibrous or slightly gray rather than smooth and white. Send us a close-up photo — natural light, raking angle — and we can give you an honest read before you come in.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-q-text">Can you handle structural damage, or just cosmetic work?</span>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-a">
+          Both. Gel coat and cosmetic work is our day-to-day. For structural repairs — transom rebuilding, delamination, significant impact damage — we draw on 35+ years of structural fiberglass expertise through our working relationship with the Yacht Doctor. For extended structural projects, full on-site setup is available for the duration of the work. If the job requires it, we have the depth to handle it.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="faq-q-text">How do I send you photos before calling?</span>
+          <span class="faq-toggle" aria-hidden="true">+</span>
+        </div>
+        <div class="faq-a">
+          Text directly to (248) 916-9166. Take a wide shot for context, then get close — 12 to 18 inches from the damage in natural light. For scratches or impact damage with depth, try a raking angle with sunlight hitting from the side. That helps us see the actual profile. Most inquiries get a same-day response.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FINAL CTA ═════════════════════════════════════════════ -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-inner reveal">
+      <span class="eyebrow" style="color: var(--brass-light);">Get Started</span>
+      <h2>Let's talk about<br><em>your boat.</em></h2>
+      <p>Call or text (248) 916-9166. Send photos of the damage and most jobs get an honest initial read the same day — no obligation, no sales pitch.</p>
+      <div class="final-actions">
+        <a class="btn btn-brass" href="tel:+12489169166">Call (248) 916-9166</a>
+        <a class="btn btn-ghost-light" href="sms:+12489169166">Text Us Photos</a>
+      </div>
+      <p class="final-note">
+        Drop-off · Adjacent to Western Golf &amp; Country Club · Redford Township · $800 minimum<br>
+        Mobile service · Southeastern Michigan · $1,200 minimum
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-inner container">
+    <div class="footer-brand">
+      <span class="script">Cooper</span>
+      <span class="sans">Marine Fiberglass</span>
+      <span class="tagline">Excellence, by Design.</span>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="/services/gel-coat-restoration/">Gel Coat Restoration</a>
+      <a href="/services/scratch-repair/">Scratch &amp; Cosmetic Repair</a>
+      <a href="/services/dock-damage/">Dock Dings &amp; Impact</a>
+      <a href="/services/structural-repair/">Structural Repair</a>
+      <a href="/services/hull-buff-out/">Hull Buff Out</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:+12489169166">(248) 916-9166</a>
+      <a href="mailto:info@cmfiberglass.com">info@cmfiberglass.com</a>
+      <a href="https://cmfiberglass.com">cmfiberglass.com</a>
+      <p>Redford Township, MI</p>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <p>&copy; 2025 Cooper Marine Fiberglass · Southeastern Michigan</p>
+    <span class="footer-scripture">Col 3:23 · Ecc 9:10</span>
   </div>
 </footer>
 
-  </body>
+<script>
+  /* Scroll reveal */
+  (function() {
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.07 });
+    document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
+  })();
+
+  /* FAQ accordion */
+  (function() {
+    document.querySelectorAll('.faq-q').forEach(function(q) {
+      function toggle() {
+        var item = q.closest('.faq-item');
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(function(i) {
+          i.classList.remove('open');
+          i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          q.setAttribute('aria-expanded', 'true');
+        }
+      }
+      q.addEventListener('click', toggle);
+      q.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+      });
+    });
+  })();
+</script>
+</body>
 </html>
